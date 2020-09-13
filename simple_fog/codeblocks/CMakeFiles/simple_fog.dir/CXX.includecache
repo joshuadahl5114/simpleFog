@@ -1,0 +1,182 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/example.cpp
+windows.h
+-
+sstream
+-
+iostream
+-
+fstream
+-
+glee/GLee.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glee/GLee.h
+GL/glu.h
+-
+example.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/example.h
+glslshader.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glslshader.h
+glwindow.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glwindow.h
+glxwindow.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glxwindow.h
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/example.h
+windows.h
+-
+vector
+-
+string
+-
+iostream
+-
+terrain.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/terrain.h
+targa.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/targa.h
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glee/GLee.h
+windows.h
+-
+GL/gl.h
+-
+OpenGL/gl.h
+-
+GL/gl.h
+-
+GL/glx.h
+-
+stddef.h
+-
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glslshader.h
+windows.h
+-
+map
+-
+fstream
+-
+iostream
+-
+string
+-
+vector
+-
+glee/GLee.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glee/GLee.h
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glwindow.h
+windows.h
+-
+ctime
+-
+string
+-
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glx/glxext.h
+windows.h
+-
+inttypes.h
+-
+inttypes.h
+-
+inttypes.h
+-
+stdint.h
+-
+stdint.h
+-
+inttypes.h
+-
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glxwindow.cpp
+iostream
+-
+string
+-
+sys/time.h
+-
+example.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/example.h
+glxwindow.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glxwindow.h
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glxwindow.h
+glee/GLee.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glee/GLee.h
+GL/glx.h
+-
+glx/glxext.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glx/glxext.h
+X11/Xlib.h
+-
+X11/Xutil.h
+-
+X11/extensions/xf86vmode.h
+-
+X11/keysym.h
+-
+ctime
+-
+string
+-
+iostream
+-
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/main.cpp
+windows.h
+-
+glwindow.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glwindow.h
+glxwindow.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glxwindow.h
+example.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/example.h
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/targa.cpp
+fstream
+-
+cassert
+-
+iostream
+-
+targa.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/targa.h
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/targa.h
+vector
+-
+string
+-
+fstream
+-
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/terrain.cpp
+fstream
+-
+cmath
+-
+iostream
+-
+terrain.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/terrain.h
+example.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/example.h
+
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/terrain.h
+windows.h
+-
+string
+-
+vector
+-
+glee/GLee.h
+/media/OS/Users/luke/Desktop/BOGLGP Source/boglgp/Source/OpenGL 3.0/chapter_8/simple_fog/src/glee/GLee.h
+
