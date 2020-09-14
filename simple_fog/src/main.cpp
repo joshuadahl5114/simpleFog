@@ -84,6 +84,12 @@ int main(int argc, char** argv)
         example.prepare((float)(thisTime - lastTime));
         lastTime = thisTime;
         
+        if (glfwGetKey(gWindow, GLFW_KEY_SPACE))
+        {
+            example.toggleFogMode();
+        }
+        
+        
         // draw one frame
         example.render();
         
