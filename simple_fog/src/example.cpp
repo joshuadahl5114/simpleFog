@@ -5,6 +5,14 @@
 #include <sstream>
 #include <iostream>
 #include <fstream>
+
+//for matrix calculation
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
 //#include "glee/GLee.h"
 //#include <GL/glu.h>
 
@@ -205,10 +213,18 @@ void Example::render()
     //glGetFloatv(GL_MODELVIEW_MATRIX, modelviewMatrix);
     //glGetFloatv(GL_PROJECTION_MATRIX, projectionMatrix);
     
-    //need to find away to find the correct maxtrices
-    //use GLM to do this, the scene is supposed to rotate around the y-axis
-    //the key listener is trivial to get to work for toggling fog types
+    //now just add the key listener to change fog modes
+    float dArray[16] = {0.0};
+    glm::mat4 pMat4 = glm::mat4( 1.0 );
     
+    pMat4 = glm::translate(pMat4, glm::vec3(0.0f,-20.0f,0.0f));
+    pMat4 = glm::rotate(pMat4,25.0f,glm::vec3(1.0f,0.0f,0.0f));
+    pMat4 = glm::translate(pMat4,glm::vec3(0.0f,0.0f,-50.0f));
+    pMat4 = glm::rotate(pMat4,m_angle,glm::vec3(0.0f,1.0f,0.0f));
+    const float *pSource = (const float*)glm::value_ptr(pMat4);
+    
+    for (int i = 0; i < 16; ++i)
+    dArray[i] = pSource[i];
     
     float model[16] = { 1.0f,0.0f,0.0f,0.0f,0.0f,.906f,.422f,0.0f,0.0f,-.422f,.906f,0.0f,0.0f,1.13f,-45.0f,1.0f };
     float project[16] = {1.53,0,0,0,0,2.05,0,0,0,0,-1.02,-1,0,0,-2.02,0};
@@ -217,7 +233,7 @@ void Example::render()
     m_GLSLProgram->bindShader();
 
     //Send the modelview and projection matrices to the shaders
-    m_GLSLProgram->sendUniform4x4("modelview_matrix", model);
+    m_GLSLProgram->sendUniform4x4("modelview_matrix", dArray);
     m_GLSLProgram->sendUniform4x4("projection_matrix", project);
     m_GLSLProgram->sendUniform3x3("normal_matrix", &normalMatrix[0]);
     m_GLSLProgram->sendUniform("texture0", 0);
@@ -239,7 +255,7 @@ void Example::render()
     m_terrain.render();
 
     m_waterProgram->bindShader();
-    m_waterProgram->sendUniform4x4("modelview_matrix", model);
+    m_waterProgram->sendUniform4x4("modelview_matrix", dArray);
     m_waterProgram->sendUniform4x4("projection_matrix", project);
     m_waterProgram->sendUniform3x3("normal_matrix", &normalMatrix[0]);
 
